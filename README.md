@@ -27,10 +27,10 @@ VD: FOREIGN:VNM hoặc FOREIGN:VNM,ACB
 | **TotalSellVol**      | Number      | Khối lượng cổ phiếu bán tích lũy.                     | Ví dụ: `0.0`                    |
 | **TotalBuyVal**       | Number      | Tổng giá trị cổ phiếu mua tích lũy.                    | Ví dụ: `0.0`                    |
 | **TotalSellVal**      | Number      | Tổng giá trị cổ phiếu bán tích lũy.                      | Ví dụ: `0.0`                    |
-| **BuyPutVol**         | Number      | Khối lượng hợp đồng mua quyền bán.                               | Ví dụ: `0.0`                    |
-| **BuyPutVal**         | Number      | Giá trị hợp đồng mua quyền bán.                                | Ví dụ: `0.0`                    |
-| **SellPutVol**        | Number      | Khối lượng hợp đồng bán quyền bán.                                 | Ví dụ: `0.0`                    |
-| **SellPutVal**        | Number      | Giá trị hợp đồng bán quyền bán.                                  | Ví dụ: `0.0`                    |
+| **BuyPutVol**         | Number      | Khối lượng thỏa thuận hợp đồng mua quyền bán.                               | Ví dụ: `0.0`                    |
+| **BuyPutVal**         | Number      | Giá trị thỏa thuận hợp đồng mua quyền bán.                                | Ví dụ: `0.0`                    |
+| **SellPutVol**        | Number      | Khối lượng thỏa thuận hợp đồng bán quyền bán.                                 | Ví dụ: `0.0`                    |
+| **SellPutVal**        | Number      | Giá trị thỏa thuận hợp đồng bán quyền bán.                                  | Ví dụ: `0.0`                    |
 | **LastUpdate**        | Date Giờ | Dấu thời gian cập nhật lần cuối.                               | Định dạng: `YYYY-MM-DDTHH:MM:SS.sss` |
 
 **Example**
