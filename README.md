@@ -170,3 +170,36 @@ X_TRADE: Stock code
 VD: X_TRADE:VNM hoặc X_TRADE:VNM,ACB
 
 <ins>Output</ins>
+
+| **Tên Trường**        | **Kiểu Dữ Liệu** | **Mô Tả**                                         | **Giá Trị/Định Dạng**          |
+| --------------------- | ---------------- | ------------------------------------------------- | ------------------------------ |
+| **DataType**          | String           | Xác định loại dữ liệu.                            | Ví dụ: `X-TRADE`               |
+| **Package**           | Number           | Gói giao dịch.                                    | Ví dụ: `74501`                 |
+| **StockCode**         | String           | Mã chứng khoán đại diện cho công ty.              | Ví dụ: `ACB`                   |
+| **TradingDate**       | DateTime         | Ngày giao dịch.                                   | Định dạng: `YYYY-MM-DDTHH:MM:SS` |
+| **Price**             | Number           | Giá giao dịch.                                    | Ví dụ: `42150.00`              |
+| **Vol**               | Number           | Khối lượng giao dịch.                             | Ví dụ: `900.0`                 |
+| **TotalVol**          | Number           | Tổng khối lượng giao dịch.                        | Ví dụ: `1197700.0`             |
+| **TotalVal**          | Number           | Tổng giá trị giao dịch.                           | Ví dụ: `50483055000.0`         |
+| **Change**            | Number           | Biến động giá.                                    | Ví dụ: `2750.00`               |
+| **IsBuy**             | Number (0 hoặc 1)| Giao dịch mua hay bán.                            | `0`: Bán, `1`: Mua             |
+| **PerChange**         | Number (%)       | Biến động giá theo phần trăm.                     | Ví dụ: `6.98`                  |
+| **LastUpdate**        | DateTime         | Thời điểm cập nhật cuối.                          | Định dạng: `YYYY-MM-DDTHH:MM:SS.sss` |
+
+**Example**
+```json
+{
+  "DataType": "X-TRADE",
+  "Package": 74501,
+  "Stockcode": "ACB",
+  "TradingDate": "2024-04-01T14:45:00.217",
+  "Price": 42150,
+  "Vol": 900,
+  "TotalVol": 1197700,
+  "TotalVal": 50483055000,
+  "Change": 2750,
+  "IsBuy": 0,
+  "PerChange": 6.98,
+  "LastUpdate": "2024-04-03T14:45:05.69"
+}
+```
