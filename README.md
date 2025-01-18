@@ -9,29 +9,29 @@ VD: FOREIGN:VNM hoặc FOREIGN:VNM,ACB
 
 <ins>Output</ins>
 
-| **Tên Trường**        | **Kiểu Dữ Liệu** | **Mô Tả**                                             | **Giá Trị/Định Dạng**                  |
-| --------------------- | -------- | ----------------------------------------------------------- | --------------------------------- |
-| **Rtype**             | String   | Xác định loại dữ liệu. Luôn có giá trị là `FOREIGN`. | `FOREIGN`                         |
-| **StockCode**         | String   | Mã chứng khoán đại diện cho công ty.                       | Ví dụ: `VNM`                    |
-| **TradingDate**       | Date     | Ngày giao dịch.                                         | Định dạng: `YYYY-MM-DDTHH:MM:SS`     |
-| **TotalRoom**         | Number      | Tổng room dành cho nhà đầu tư nước ngoài.                 | Ví dụ: `2089955445.0`           |
-| **OpenRoom**          | Number      | Room còn lại khi bắt đầu phiên giao dịch.         | Ví dụ: `984152735.0`            |
-| **CurrRoom**          | Number      | Room còn lại hiện tại cho nhà đầu tư nước ngoài.               | Ví dụ: `984152735.0`            |
-| **BuyVol**            | Number      | Khối lượng cổ phiếu mua trong phiên giao dịch.                 | Ví dụ: `96.30`                  |
-| **SellVol**           | Number      | Khối lượng cổ phiếu bán trong phiên giao dịch.                   | Ví dụ: `0.0`                    |
-| **BuyVal**            | Number      | Tổng giá trị cổ phiếu mua.                               | Ví dụ: `0.0`                    |
+| **Tên Trường**        | **Kiểu Dữ Liệu**  | **Mô Tả**                                            | **Giá Trị/Định Dạng**           |
+| --------------------- | --------          | -----------------------------------------------------| --------------------------------|
+| **Rtype**             | String            | Xác định loại dữ liệu. Luôn có giá trị là `FOREIGN`. | `FOREIGN`                       |
+| **StockCode**         | String            | Mã chứng khoán đại diện cho công ty.                 | Ví dụ: `VNM`                    |
+| **TradingDate**       | Date              | Ngày giao dịch.                                      | Định dạng: `YYYY-MM-DDTHH:MM:SS`|
+| **TotalRoom**         | Number      | Tổng room dành cho nhà đầu tư nước ngoài.                  | Ví dụ: `2089955445.0`           |
+| **OpenRoom**          | Number      | Room còn lại khi bắt đầu phiên giao dịch.                  | Ví dụ: `984152735.0`            |
+| **CurrRoom**          | Number      | Room còn lại hiện tại cho nhà đầu tư nước ngoài.           | Ví dụ: `984152735.0`            |
+| **BuyVol**            | Number      | Khối lượng cổ phiếu mua trong phiên giao dịch.             | Ví dụ: `96.30`                  |
+| **SellVol**           | Number      | Khối lượng cổ phiếu bán trong phiên giao dịch.             | Ví dụ: `0.0`                    |
+| **BuyVal**            | Number      | Tổng giá trị cổ phiếu mua.                                 | Ví dụ: `0.0`                    |
 | **SellVal**           | Number      | Tổng giá trị cổ phiếu bán.                                 | Ví dụ: `0.0`                    |
-| **OwnedRatio**        | Number      | Tỷ lệ sở hữu của nhà đầu tư nước ngoài.          | Ví dụ: `4.81`                   |
-| **OwnedRatioOrgData** | Number      | Tỷ lệ sở hữu gốc.                              | Ví dụ: `0.0000`                 |
-| **TotalBuyVol**       | Number      | Khối lượng cổ phiếu mua tích lũy.                   | Ví dụ: `0.0`                    |
-| **TotalSellVol**      | Number      | Khối lượng cổ phiếu bán tích lũy.                     | Ví dụ: `0.0`                    |
-| **TotalBuyVal**       | Number      | Tổng giá trị cổ phiếu mua tích lũy.                    | Ví dụ: `0.0`                    |
-| **TotalSellVal**      | Number      | Tổng giá trị cổ phiếu bán tích lũy.                      | Ví dụ: `0.0`                    |
-| **BuyPutVol**         | Number      | Khối lượng thỏa thuận hợp đồng mua quyền bán.                               | Ví dụ: `0.0`                    |
-| **BuyPutVal**         | Number      | Giá trị thỏa thuận hợp đồng mua quyền bán.                                | Ví dụ: `0.0`                    |
-| **SellPutVol**        | Number      | Khối lượng thỏa thuận hợp đồng bán quyền bán.                                 | Ví dụ: `0.0`                    |
-| **SellPutVal**        | Number      | Giá trị thỏa thuận hợp đồng bán quyền bán.                                  | Ví dụ: `0.0`                    |
-| **LastUpdate**        | Date Giờ | Dấu thời gian cập nhật lần cuối.                               | Định dạng: `YYYY-MM-DDTHH:MM:SS.sss` |
+| **OwnedRatio**        | Number      | Tỷ lệ sở hữu của nhà đầu tư nước ngoài.                    | Ví dụ: `4.81`                   |
+| **OwnedRatioOrgData** | Number      | Tỷ lệ sở hữu gốc.                                          | Ví dụ: `0.0000`                 |
+| **TotalBuyVol**       | Number      | Khối lượng cổ phiếu mua tích lũy.                          | Ví dụ: `0.0`                    |
+| **TotalSellVol**      | Number      | Khối lượng cổ phiếu bán tích lũy.                          | Ví dụ: `0.0`                    |
+| **TotalBuyVal**       | Number      | Tổng giá trị cổ phiếu mua tích lũy.                        | Ví dụ: `0.0`                    |
+| **TotalSellVal**      | Number      | Tổng giá trị cổ phiếu bán tích lũy.                        | Ví dụ: `0.0`                    |
+| **BuyPutVol**         | Number      | Khối lượng thỏa thuận hợp đồng mua quyền bán.              | Ví dụ: `0.0`                    |
+| **BuyPutVal**         | Number      | Giá trị thỏa thuận hợp đồng mua quyền bán.                 | Ví dụ: `0.0`                    |
+| **SellPutVol**        | Number      | Khối lượng thỏa thuận hợp đồng bán quyền bán.              | Ví dụ: `0.0`                    |
+| **SellPutVal**        | Number      | Giá trị thỏa thuận hợp đồng bán quyền bán.                 | Ví dụ: `0.0`                    |
+| **LastUpdate**        | Date Giờ    | Dấu thời gian cập nhật lần cuối.                           | Định dạng: `YYYY-MM-DDTHH:MM:SS`|
 
 **Example**
 
