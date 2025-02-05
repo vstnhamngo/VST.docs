@@ -203,3 +203,131 @@ VD: X_TRADE:VNM hoặc X_TRADE:VNM,ACB
   "LastUpdate": "2024-04-03T14:45:05.69"
 }
 ```
+### 4. Dữ liệu thị trường
+
+<ins>Input</ins>
+X_TRADE: Stock code
+
+VD: X_STOCK_BEST_PRICE:VNM, X_STOCK_BEST_PRICE:VNM,ACB hoặc X_STOCK_BEST_PRICE:ALL
+
+<ins>Output</ins>
+
+| **Tên Trường**       | **Kiểu Dữ Liệu** | **Mô Tả**                                       | **Giá Trị/Định Dạng**          |
+|----------------------|-----------------|-------------------------------------------------|--------------------------------|
+| **Best1Bid**        | Decimal         | Giá đặt mua tốt nhất 1                          | Ví dụ: `8000.0`               |
+| **Best1BidVol**     | Decimal         | Khối lượng đặt mua tốt nhất 1                   | Ví dụ: `27300.0`              |
+| **Best1Offer**      | Decimal         | Giá đặt bán tốt nhất 1                          | Ví dụ: `8100.0`               |
+| **Best1OfferVol**   | Decimal         | Khối lượng đặt bán tốt nhất 1                   | Ví dụ: `56300.0`              |
+| **Best2Bid**        | Decimal         | Giá đặt mua tốt nhất 2                          | Ví dụ: `7900.0`               |
+| **Best2BidVol**     | Decimal         | Khối lượng đặt mua tốt nhất 2                   | Ví dụ: `52000.0`              |
+| **Best2Offer**      | Decimal         | Giá đặt bán tốt nhất 2                          | Ví dụ: `8200.0`               |
+| **Best2OfferVol**   | Decimal         | Khối lượng đặt bán tốt nhất 2                   | Ví dụ: `23700.0`              |
+| **Best3Bid**        | Decimal         | Giá đặt mua tốt nhất 3                          | Ví dụ: `7800.0`               |
+| **Best3BidVol**     | Decimal         | Khối lượng đặt mua tốt nhất 3                   | Ví dụ: `54100.0`              |
+| **Best3Offer**      | Decimal         | Giá đặt bán tốt nhất 3                          | Ví dụ: `8300.0`               |
+| **Best3OfferVol**   | Decimal         | Khối lượng đặt bán tốt nhất 3                   | Ví dụ: `24400.0`              |
+| **Exchange**        | String          | Sàn giao dịch                                  | Ví dụ: `HNX`                  |
+| **StockCode**       | String          | Mã chứng khoán đại diện cho công ty            | Ví dụ: `DVM`                  |
+| **TradingDate**     | DateTime        | Ngày giao dịch                                 | Định dạng: `YYYY-MM-DDTHH:MM:SS` |
+| **LastUpdate**      | DateTime        | Thời điểm cập nhật cuối                        | Định dạng: `YYYY-MM-DDTHH:MM:SS.sss` |
+
+**Example**
+```json
+{
+  "Best1Bid": 8000,
+  "Best1BidVol": 27300,
+  "Best1Offer": 8100,
+  "Best1OfferVol": 56100,
+  "Best2Bid": 7900,
+  "Best2BidVol": 52000,
+  "Best2Offer": 8200,
+  "Best2OfferVol": 23700,
+  "Best3Bid": 7800,
+  "Best3BidVol": 54100,
+  "Best3Offer": 8300,
+  "Best3OfferVol": 24400,
+  "Exchange": "HNX",
+  "StockCode": "DVM",
+  "TradingDate": "2025-02-05T00:00:00",
+  "LastUpdate": "2025-02-05T14:26:54.22"
+}
+```
+### 5. Dữ liệu Index
+
+<ins>Input</ins>
+X_EXCHANGE: Stock code
+
+VD: X_EXCHANGE:VN30, X_EXCHANGE:VN30-HNXindex,VN30 hoặc X_EXCHANGE:ALL
+
+<ins>Output</ins>
+
+| **Tên Trường**         | **Kiểu Dữ Liệu** | **Mô Tả**                                      | **Giá Trị/Định Dạng**            |
+|------------------------|-----------------|------------------------------------------------|----------------------------------|
+| **CloseIndex**        | Decimal         | Chỉ số đóng cửa                                | Ví dụ: `95.74`                 |
+| **DiffBuySellTrade**  | Decimal         | Chênh lệch số lượng giao dịch mua - bán        | Ví dụ: `654.0`                 |
+| **DiffBuySellVol**    | Decimal         | Chênh lệch khối lượng mua - bán                | Ví dụ: `-26428400.0`           |
+| **Exchange**         | String          | Sàn giao dịch                                  | Ví dụ: `UPCOM`                 |
+| **ForeignBuyPutVal** | Decimal         | Giá trị đặt mua của nhà đầu tư nước ngoài      | Ví dụ: `0.0`                   |
+| **ForeignBuyPutVol** | Decimal         | Khối lượng đặt mua của nhà đầu tư nước ngoài   | Ví dụ: `0.0`                   |
+| **ForeignBuyVal**    | Decimal         | Giá trị mua của nhà đầu tư nước ngoài          | Ví dụ: `0.0`                   |
+| **ForeignBuyVol**    | Decimal         | Khối lượng mua của nhà đầu tư nước ngoài       | Ví dụ: `0.0`                   |
+| **ForeignSellPutVal** | Decimal        | Giá trị đặt bán của nhà đầu tư nước ngoài      | Ví dụ: `0.0`                   |
+| **ForeignSellPutVol** | Decimal        | Khối lượng đặt bán của nhà đầu tư nước ngoài   | Ví dụ: `0.0`                   |
+| **ForeignSellVal**    | Decimal        | Giá trị bán của nhà đầu tư nước ngoài          | Ví dụ: `0.0`                   |
+| **ForeignSellVol**    | Decimal        | Khối lượng bán của nhà đầu tư nước ngoài       | Ví dụ: `0.0`                   |
+| **HighestIndex**     | Decimal         | Chỉ số cao nhất trong phiên                    | Ví dụ: `95.89`                 |
+| **IndexCode**        | String          | Mã chỉ số                                      | Ví dụ: `UPCOMINDEX`            |
+| **LowestIndex**      | Decimal         | Chỉ số thấp nhất trong phiên                   | Ví dụ: `95.12`                 |
+| **OpenIndex**        | Decimal         | Chỉ số mở cửa                                  | Ví dụ: `95.31`                 |
+| **PriorIndex**       | Decimal         | Chỉ số tham chiếu                              | Ví dụ: `95.31`                 |
+| **Row**             | Long            | Số thứ tự hàng dữ liệu                         | Ví dụ: `3`                     |
+| **Rows**            | Int             | Tổng số hàng dữ liệu                           | Ví dụ: `4`                     |
+| **TotalBuyTrade**   | Decimal         | Tổng số lệnh mua                               | Ví dụ: `207361.0`              |
+| **TotalBuyVal**     | Decimal         | Tổng giá trị giao dịch mua                     | Ví dụ: `0.0`                   |
+| **TotalBuyVol**     | Decimal         | Tổng khối lượng giao dịch mua                 | Ví dụ: `787302900.0`           |
+| **TotalPutVal**     | Decimal         | Tổng giá trị đặt lệnh                          | Ví dụ: `35543052100.0`         |
+| **TotalPutVol**     | Decimal         | Tổng khối lượng đặt lệnh                       | Ví dụ: `4473309.0`             |
+| **TotalSellTrade**  | Decimal         | Tổng số lệnh bán                               | Ví dụ: `206707.0`              |
+| **TotalSellVal**    | Decimal         | Tổng giá trị giao dịch bán                     | Ví dụ: `0.0`                   |
+| **TotalSellVol**    | Decimal         | Tổng khối lượng giao dịch bán                 | Ví dụ: `813731300.0`           |
+| **TotalVal**        | Decimal         | Tổng giá trị giao dịch                         | Ví dụ: `659546112200.0`        |
+| **TotalVol**        | Decimal         | Tổng khối lượng giao dịch                      | Ví dụ: `38985470.0`            |
+| **TradingDate**     | DateTime        | Ngày giao dịch                                 | Định dạng: `YYYY-MM-DDTHH:MM:SS` |
+| **LastUpdate**      | DateTime        | Thời điểm cập nhật cuối                        | Định dạng: `YYYY-MM-DDTHH:MM:SS.sss` |
+
+**Example**
+```json
+{
+  "CloseIndex": 228.2,
+  "DiffBuySellTrade": 481,
+  "DiffBuySellVol": -28087300,
+  "Exchange": "HNX",
+  "ForeignBuyPutVal": 0,
+  "ForeignBuyPutVol": 0,
+  "ForeignBuyVal": 0,
+  "ForeignBuyVol": 0,
+  "ForeignSellPutVal": 0,
+  "ForeignSellPutVol": 0,
+  "ForeignSellVal": 0,
+  "ForeignSellVol": 0,
+  "HighestIndex": 228.46,
+  "IndexCode": "HNXINDEX",
+  "LowestIndex": 223.31,
+  "OpenIndex": 226,
+  "PriorIndex": 226.61,
+  "Row": 1,
+  "Rows": 2,
+  "TotalBuyTrade": 206679,
+  "TotalBuyVal": 0,
+  "TotalBuyVol": 784277400,
+  "TotalPutVal": 6676830000,
+  "TotalPutVol": 399400,
+  "TotalSellTrade": 206198,
+  "TotalSellVal": 0,
+  "TotalSellVol": 812364700,
+  "TotalVal": 769440559700,
+  "TotalVol": 45787871,
+  "TradingDate": "2025-02-05T00:00:00",
+  "LastUpdate": "2025-02-05T14:43:16.217"
+}
+```
