@@ -203,10 +203,10 @@ VD: X_TRADE:VNM hoặc X_TRADE:VNM,ACB
   "LastUpdate": "2024-04-03T14:45:05.69"
 }
 ```
-### 4. Dữ liệu thị trường
+### 4. Thông tin đặt lệnh
 
 <ins>Input</ins>
-X_TRADE: Stock code
+X_STOCK_BEST_PRICE: Stock code
 
 VD: X_STOCK_BEST_PRICE:VNM, X_STOCK_BEST_PRICE:VNM,ACB hoặc X_STOCK_BEST_PRICE:ALL
 
@@ -252,7 +252,7 @@ VD: X_STOCK_BEST_PRICE:VNM, X_STOCK_BEST_PRICE:VNM,ACB hoặc X_STOCK_BEST_PRICE
   "LastUpdate": "2025-02-05T14:26:54.22"
 }
 ```
-### 5. Dữ liệu Index
+### 5. Chỉ số thị trường
 
 <ins>Input</ins>
 X_EXCHANGE: Stock code
